@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CKEDITOR插件，添加秀米模版</title>
+  </head>
+  <body>
+    <textarea class="ckeditor" name="editor1" id="editor1" cols="30" rows="10">
+    </textarea>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.5.11/ckeditor.js"></script>
+    <script>
+
+      //支持HTML5
+      CKEDITOR.config.allowedContent = {
+        '$1': {
+          elements: CKEDITOR.dtd,
+          attributes: true,
+          styles: true,
+          classes: true
+        }
+      };
+
+      CKEDITOR.plugins.addExternal('xiumi', location.pathname + 'tree/master/');
+      CKEDITOR.config.extraPlugins = 'xiumi';
+    </script>
+  </body>
+</html>
