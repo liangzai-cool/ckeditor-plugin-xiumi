@@ -2,7 +2,7 @@
  http://xueliang.org/
 
 # Demo
- http://liangzai-cool.github.io/ckeditor-plugins-xiumi/
+ http://liangzai-cool.github.io/ckeditor-plugin-xiumi/
 
 # Introduce
 
